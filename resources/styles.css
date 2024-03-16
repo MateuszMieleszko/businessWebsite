@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+/*Global styles*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p{
+   font-family: 'Open Sans',serif;
+   background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
+    color: #B7B8BC;
+}
+
+.example,
+.teammate {
+    border: 2px solid rgb(55, 41, 2));
+    border-radius: 5px;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+}
+
+section.projects,
+section.contacts {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+nav,
+footer,
+header {
+    background-color: black;
+}
+
+/* Navigation */
+
+nav {
+    height: 160px;
+    position: fixed;    
+    width: 100%;
+    color: #FBFBFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #282B37; 
+}
+
+img.logo {
+    height: 100px;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+nav .links {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 15px;
+    font-size: 2rem;
+}
+
+nav button {
+    background-color: #ec2768;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.burgermenu {
+    margin: auto;
+    margin-left: 10px;
+    display: none;    
+}
+
+.burgermenu img {
+    height: 90px;
+    width: 120px;
+    padding: 10px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .links a {
+        display: none;
+    }
+
+    nav .burgermenu {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+
+/* Header */
+
+header {
+    background-image: url("cover.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+header h1 {
+    max-width: 800px;
+    margin: 60px;
+}
+
+/* Projects */
+.projects {
+    
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example {    
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+#lambo {
+    background-image: url("lambo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#ferrari {
+    background-image: url("ferrari.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#bmw {
+    background-image: url("bmw.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+#mercedes {
+    background-image: url("mercedes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+#van {
+    background-image: url("van.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+/* Team */
+
+.team h2 {
+    display: none;
+}
+
+.teammates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teammate {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin: 30px
+}
+
+#ahopkin {
+    background-image: url("andy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ldawn {
+    background-image: url("leon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mcox {
+    background-image: url("mike.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#adaniells {
+    background-image: url("amanda.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jarnold {
+    background-image: url("jacob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contacts */
+
+section.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts img {
+    width: 280px;
+    height: auto;
+    flex-grow: 2;
+}
+
+.contacts .content {
+    width: 280px;
+    padding-right: 40px;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+/* Copyright */
+
+footer {          
+    padding: 5px 30px;
+    border-top: 2px solid #282B37;
+}
+
+footer p,
+footer a {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #797A7F; 
+}
